@@ -99,3 +99,68 @@ main{
 .man-woman {
     background: linear-gradient(90deg, #F9F6F1 0%, #F9F6F1 50%, #F9E0E0 50%, #F9E0E0 100%);
 }
+
+/*-------главное меню сайта---------*/
+header{
+    min-height: 120px ;
+    background-color: #F9F6F1;
+    font-family: 'montserratregular'
+}
+.header-menu{
+    min-height: 90px;
+}
+.section_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;   
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+.mainmenu_list{
+    gap: 35px;
+    display: flex;
+    flex-direction: row;
+}
+.basket_list{
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section_wrapper a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.logo h2{
+    display: flex;
+    flex-direction: row;
+}
+.meinmenu_item a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/*--------section banner-------*/
+.slider_item{
+    min-height: 564px;
+    background: url(../img/first-screen__image.svg) no-repeat right center;
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+}
+
+

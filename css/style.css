@@ -103,12 +103,17 @@ main{
 
 /*-------главное меню сайта---------*/
 header{
-    min-height: 120px ;
     background-color: #F9F6F1;
     font-family: 'montserratregular'
 }
 .header-menu{
     min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #F9F6F1;
+    
 }
 .section_wrapper{
     display: flex;
@@ -154,11 +159,76 @@ ul{
     gap: 5px;
 }
 
+/*------кроссовок-------*/
+.slider__item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url(../img/running_shoes_PNG5823\ \(1\).svg) no-repeat right center;
+}
+
+.slider__text{
+    font-size: 30px;
+}
+
+.slider__big-text{
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.button{
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.slider__item-price{
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.slider__price--old{
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider__price--new{
+    font-size: 42px;
+    color: #d84033;
+}
+.slider__wrapper{
+    position: relative;
+}
+.slider__button{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
+.slider__button--prev{
+    left: -100px;
+    margin-left: 72px;
+    
+}
+.slider__button--next{
+    right: -100px;
+    margin-right: 72px;
+}
+
 
 /*--------section banner-------*/
-.slider_item{
+.slider__item{
     min-height: 564px;
-    background: url(../img/first-screen__image.svg) no-repeat right center;
+    background: url(../img/running_shoes_PNG5823\ \(1\).svg) no-repeat right center;
     display: flex;
     padding-top: 166px;
     justify-content: space-between;
@@ -240,4 +310,14 @@ ul{
     margin-right: 20px;
     margin-bottom: 20px;
 
+}
+
+/*------section dress------*/
+.dress__wrapper{
+    flex-wrap: wrap;
+}
+.dress__item{
+    width: 277px;
+    height: 236px;
+    text-align: right;
 }
